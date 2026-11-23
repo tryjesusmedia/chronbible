@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">ChronBible</title>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0ae"/><stop offset=".5" stop-color="#EEBD4A"/><stop offset="1" stop-color="#b8812d"/></linearGradient></defs>
+  <rect width="128" height="128" rx="25" fill="#1C111D"/>
+  <path d="M64 45C48 33 25 30 11 38v54c21-7 37-3 53 11 16-14 32-18 53-11V38c-14-8-37-5-53 7Z" fill="url(#g)"/>
+  <path d="M64 51C51 43 32 40 19 47v39c20-5 34 0 45 10 11-10 25-15 45-10V47c-13-7-32-4-45 4Z" fill="#F3E8D0"/>
+  <path d="M52 47q12 10 24 0c-2 12-7 17-10 23 3 6 8 11 10 22q-12-8-24 0c2-11 7-16 10-22-3-6-8-11-10-23Z" fill="#1C111D"/>
+  <path d="M62 70h4" stroke="#EEBD4A" stroke-width="2" stroke-linecap="round"/>
+</svg>
