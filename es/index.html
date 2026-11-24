@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1C111D">
+  <meta name="description" content="Lee y comprende toda la Biblia en el orden en que sucedieron los acontecimientos con la ChronBible gratis. Obtén acceso al instante y sigue las Escrituras como una historia conectada.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ChronBible">
+  <meta property="og:title" content="La ChronBible | La Biblia. Una sola historia. En orden.">
+  <meta property="og:description" content="Por fin, lee y comprende toda la Biblia en el orden en que sucedieron los acontecimientos, sin cronologías confusas ni perder el hilo de la historia.">
+  <title>La ChronBible | Lee la Biblia en el orden en que sucedió</title>
+  <link rel="alternate" hreflang="en" href="/">
+  <link rel="alternate" hreflang="es" href="/es/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css?v=20261124-language-menu">
+  <script defer src="/script.js?v=20261124-language-menu"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir al contenido</a>
+
+  <!-- Shared emblem. The gold Bible contains an hourglass in plum negative space. -->
+  <svg class="svg-sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="cb-gold" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#fff0ae"/>
+        <stop offset=".42" stop-color="#EEBD4A"/>
+        <stop offset="1" stop-color="#bd8328"/>
+      </linearGradient>
+      <symbol id="chronbible-mark" viewBox="0 0 208 174">
+        <path d="M104 57C78 39 40 34 9 51v87c38-13 68-6 95 18 27-24 57-31 95-18V51c-31-17-69-12-95 6Z" fill="url(#cb-gold)"/>
+        <path d="M104 68C80 51 45 47 20 60v63c34-9 63-1 84 18 21-19 50-27 84-18V60c-25-13-60-9-84 8Z" fill="#F3E8D0"/>
+        <path d="M27 72c24-8 49-1 65 10M27 88c23-6 43-1 57 8M27 105c23-3 42 3 55 11M181 72c-24-8-49-1-65 10M181 88c-23-6-43-1-57 8M181 105c-23-3-42 3-55 11" fill="none" stroke="#bd8328" stroke-width="2" stroke-linecap="round" opacity=".52"/>
+        <!-- The hourglass is intentionally cut out of the pages, not drawn as a second object. -->
+        <path d="M83 59Q104 71 125 59C122 79 114 89 109 98c5 9 13 19 16 39q-21-13-42 0c3-20 11-30 16-39-5-9-13-19-16-39Z" fill="#1C111D"/>
+        <path d="M98 100h12M103 103v13" stroke="#EEBD4A" stroke-linecap="round" stroke-width="2" opacity=".9"/>
+        <path d="M9 143c37-12 68-6 95 17 27-23 58-29 95-17" fill="none" stroke="#EEBD4A" stroke-width="5" stroke-linecap="round"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="ChronBible, volver al inicio">
+        <svg class="brand-mark" aria-hidden="true"><use href="#chronbible-mark"></use></svg>
+        <span class="brand-name">Chron<span>Bible</span></span>
+      </a>
+      <div class="header-controls">
+        <nav class="language-switch" aria-label="Idioma">
+          <a href="/" lang="en" hreflang="en" aria-label="English">EN</a>
+          <span class="language-divider" aria-hidden="true">/</span>
+          <a href="/es/" lang="es" hreflang="es" aria-label="Español" aria-current="page">ES</a>
+        </nav>
+      <button class="menu-toggle" type="button" aria-controls="mobile-nav" aria-expanded="false" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      </div>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Navegación principal" hidden>
+      <a href="#why">La diferencia</a>
+      <a href="#included">Qué incluye</a>
+      <a href="#how">Cómo funciona</a>
+      <a href="#faq">Preguntas frecuentes</a>
+      <a class="button" href="#signup">Obtén acceso gratis</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-rule"></span> LA BIBLIA. UNA SOLA HISTORIA. EN ORDEN.</p>
+          <h1 id="hero-title">La <span>ChronBible</span></h1>
+          <p class="hero-description">Por fin, lee y comprende toda la Biblia en el orden en que sucedieron los acontecimientos, sin cronologías confusas ni perder el hilo de la historia, con la ChronBible.</p>
+          <div class="hero-points" aria-label="Beneficios">
+            <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> 100 % gratis en línea</span>
+            <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Plan de lectura sencillo</span>
+            <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Avanza a tu ritmo</span>
+          </div>
+          <a class="hero-secondary" href="#why">Descubre por qué importa el orden <span aria-hidden="true">↓</span></a>
+        </div>
+
+        <!-- Omnisend owns the form fields, consent, submission, and styling. -->
+        <div id="signup">
+          <div id="omnisend-embedded-v2-6b061948d5aa155e74485056"></div>
+        </div>
+      </div>
+      <div class="hero-bottom-line" aria-hidden="true"></div>
+    </section>
+
+    <div class="value-strip" aria-label="Por qué elegir la ChronBible">
+      <div class="container value-strip-inner">
+        <span>TODA LA BIBLIA</span><i aria-hidden="true"></i><span>UNA HISTORIA CONECTADA</span><i aria-hidden="true"></i><span>UNA FORMA MÁS CLARA DE LEER</span>
+      </div>
+    </div>
+
+    <section class="section section-light problem-section" id="why" aria-labelledby="why-title">
+      <div class="container two-column">
+        <div class="section-copy">
+          <p class="section-label">EL PROBLEMA NO ES TU ESFUERZO</p>
+          <h2 id="why-title">¿Y si la Biblia no fuera tan confusa, sino que<em>simplemente estuvieras leyendo la historia fuera de orden?</em></h2>
+          <p>Has intentado leer la Biblia. Empezaste en Génesis. Avanzaste. Pero en algún momento, todo empezó a parecer confuso.</p>
+          <p>Diferentes reyes. Diferentes profetas. Acontecimientos que parecen saltar hacia adelante y hacia atrás en el tiempo.</p>
+          <p>Al final, perdiste el hilo de la historia.</p>
+          <p><strong>Pero hay algo que muchas personas no saben.</strong> La Biblia no está organizada en el orden en que sucedió todo. Está organizada principalmente por categorías.</p>
+          <p>Historia por aquí. Poesía por allá. Profetas en otra parte. Eso significa que puedes saltar cientos de años hacia adelante y hacia atrás sin darte cuenta.</p>
+          <p class="copy-highlight">Con razón puede ser difícil conectar todo.</p>
+          <p>Y precisamente por eso creé la ChronBible.</p>
+        </div>
+        <div class="timeline-graphic" aria-label="La Biblia suele organizarse por categorías y no estrictamente por el orden de los acontecimientos">
+          <div class="timeline-graphic-head">
+            <span class="mini-label">LA EXPERIENCIA DE LECTURA TRADICIONAL</span>
+            <span class="tiny-cross" aria-hidden="true">✦</span>
+          </div>
+          <div class="timeline-track">
+            <div class="timeline-item"><span class="timeline-num">01</span><strong>Historia</strong><span class="timeline-arrow">↘</span></div>
+            <div class="timeline-item"><span class="timeline-num">02</span><strong>Poesía</strong><span class="timeline-arrow">↗</span></div>
+            <div class="timeline-item"><span class="timeline-num">03</span><strong>Profetas</strong><span class="timeline-arrow">↘</span></div>
+            <div class="timeline-item"><span class="timeline-num">04</span><strong>Evangelios</strong><span class="timeline-arrow">↗</span></div>
+          </div>
+          <div class="timeline-graphic-footer">
+            <span class="diagram-line" aria-hidden="true"></span>
+            <p>Los libros están organizados principalmente por tipo, no como una cronología continua.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section benefits-section" id="benefits" aria-labelledby="benefits-title">
+      <div class="container">
+        <div class="section-centered narrow">
+          <p class="section-label">IMAGINA UNA EXPERIENCIA DIFERENTE</p>
+          <h2 id="benefits-title">Por fin, descubre cómo <em>encaja toda la Biblia.</em></h2>
+          <p>¿Y si pudieras seguir las Escrituras como una historia increíble, desde la Creación hasta el Apocalipsis, en el orden en que sucedieron los acontecimientos?</p>
+        </div>
+        <div class="benefits-grid">
+          <article class="benefit">
+            <span class="benefit-number">01</span>
+            <h3>Sigue la historia</h3>
+            <p>Es más fácil seguir a los personajes y ubicar los lugares.</p>
+          </article>
+          <article class="benefit">
+            <span class="benefit-number">02</span>
+            <h3>Conecta la cronología</h3>
+            <p>Los reyes y los profetas aparecen junto a los acontecimientos de su época.</p>
+          </article>
+          <article class="benefit">
+            <span class="benefit-number">03</span>
+            <h3>Descubre las conexiones</h3>
+            <p>Las historias que ya has leído empiezan a conectarse.</p>
+          </article>
+          <article class="benefit">
+            <span class="benefit-number">04</span>
+            <h3>Descubre el panorama completo</h3>
+            <p>La historia completa de las Escrituras se vuelve más clara.</p>
+          </article>
+          <article class="benefit">
+            <span class="benefit-number">05</span>
+            <h3>Lee con confianza</h3>
+            <p>Dedica menos tiempo a sentirte perdido y más a comprender.</p>
+          </article>
+        </div>
+        <p class="benefits-bottom">La misma Biblia. <em>Un recorrido más claro por la historia.</em></p>
+        <div class="center-cta"><a class="button" href="#signup">Obtén la ChronBible gratis <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="section included-section" id="included" aria-labelledby="included-title">
+      <div class="container">
+        <div class="section-centered narrow">
+          <p class="section-label">TE PRESENTAMOS LA CHRONBIBLE</p>
+          <h2 id="included-title">Toda la Biblia.<br><em>Una historia conectada.</em></h2>
+          <p>La ChronBible facilita la lectura de las Escrituras en una secuencia histórica, para que puedas concentrarte en leer, comprender y acercarte más a Dios.</p>
+        </div>
+        <div class="included-grid">
+          <article class="included-card">
+            <span class="card-icon" aria-hidden="true">01</span>
+            <h3>Un plan completo de lectura cronológica</h3>
+            <p>Recorre toda la Biblia, de Génesis a Apocalipsis, en una secuencia histórica fácil de seguir.</p>
+          </article>
+          <article class="included-card">
+            <span class="card-icon" aria-hidden="true">02</span>
+            <h3>Lecturas sencillas y manejables</h3>
+            <p>Sabrás exactamente qué leer después, sin tener que organizar la Biblia por tu cuenta.</p>
+          </article>
+          <article class="included-card">
+            <span class="card-icon" aria-hidden="true">03</span>
+            <h3>Explicaciones y preguntas útiles</h3>
+            <p>Comprende el contexto, reflexiona sobre lo que has leído y descubre cómo se conecta la historia.</p>
+          </article>
+          <article class="included-card">
+            <span class="card-icon" aria-hidden="true">04</span>
+            <h3>Tu progreso de lectura en línea</h3>
+            <p>Inicia sesión para guardar tu progreso y continuar donde te quedaste.</p>
+          </article>
+          <article class="included-card included-wide">
+            <span class="card-icon" aria-hidden="true">05</span>
+            <div>
+              <h3>Lee a tu ritmo</h3>
+              <p>Sin presión. Sin fechas límite. Da el siguiente paso cuando estés listo.</p>
+            </div>
+            <a class="text-link" href="#signup">Obtén acceso gratis <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fresh-start-section" aria-labelledby="fresh-start-title">
+      <div class="container fresh-start-grid">
+        <div class="fresh-start-quote" aria-hidden="true">
+          <svg class="large-mark"><use href="#chronbible-mark"></use></svg>
+          <div class="book-quote">
+            <span>“</span>
+            <p>Una lectura<br>a la vez.<br><em>Una historia conectada.</em></p>
+          </div>
+        </div>
+        <div class="section-copy section-copy-on-dark">
+          <p class="section-label">UNA FORMA MÁS SENCILLA DE AVANZAR</p>
+          <h2 id="fresh-start-title">No tienes que <em>empezar de nuevo una y otra vez.</em></h2>
+          <p>¿Cuántas veces te has dicho: <em>«Esta vez voy a leer toda la Biblia»?</em></p>
+          <p>Empiezas con buenas intenciones. Pero luego llegan las ocupaciones. Las lecturas se vuelven confusas. Y pronto, tu plan de lectura bíblica se convierte en otra meta sin terminar.</p>
+          <p><strong>¿Y si esta vez fuera diferente?</strong></p>
+          <p>No porque te esfuerces más, sino porque sigues un camino más sencillo.</p>
+          <p>La ChronBible te ayuda a saber qué leer después, sin tener que adivinar.</p>
+          <a class="button" href="#signup">Comenzar mi lectura gratis <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section steps-section" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-centered narrow">
+          <p class="section-label">EMPIEZA EN MINUTOS</p>
+          <h2 id="how-title">Tres pasos sencillos.<br><em>Un recorrido increíble.</em></h2>
+        </div>
+        <div class="steps-grid">
+          <article class="step">
+            <div class="step-number">1</div>
+            <h3>Obtén acceso gratis</h3>
+            <p>Ingresa tu correo electrónico y número de celular para acceder a la ChronBible en línea.</p>
+          </article>
+          <article class="step">
+            <div class="step-number">2</div>
+            <h3>Abre tu primera lectura</h3>
+            <p>Empieza desde el principio y sigue la historia de la Biblia en orden cronológico.</p>
+          </article>
+          <article class="step">
+            <div class="step-number">3</div>
+            <h3>Continúa a tu ritmo</h3>
+            <p>Lee la ChronBible, sigue tu progreso y descubre cómo se desarrolla la historia completa.</p>
+          </article>
+        </div>
+        <p class="steps-reassurance">Así de fácil. Sin configuraciones complicadas. No necesitas comprar nada.</p>
+        <div class="center-cta"><a href="#signup" class="button">Obtén acceso gratis al instante <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="story-section section" aria-labelledby="story-title">
+      <div class="container">
+        <div class="section-centered narrow">
+          <p class="section-label">EL PANORAMA COMPLETO</p>
+          <h2 id="story-title">La Biblia es más que <em>una colección de historias.</em></h2>
+          <p>Es la historia de la relación de Dios con la humanidad a lo largo del tiempo.</p>
+        </div>
+        <div class="story-line" aria-label="Desde la Creación hasta el Apocalipsis">
+          <div><span class="story-dot"></span><strong>La Creación</strong><small>El comienzo</small></div>
+          <div><span class="story-dot"></span><strong>Israel</strong><small>La promesa</small></div>
+          <div><span class="story-dot"></span><strong>Los profetas</strong><small>El mensaje</small></div>
+          <div><span class="story-dot"></span><strong>Jesucristo</strong><small>El cumplimiento</small></div>
+          <div><span class="story-dot"></span><strong>La nueva creación</strong><small>La esperanza</small></div>
+        </div>
+        <p class="story-closing">Cuando empiezas a ver cómo se conectan estos acontecimientos, puedes comprender las Escrituras de una manera completamente nueva.</p>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div class="faq-lead">
+          <p class="section-label">PREGUNTAS Y RESPUESTAS</p>
+          <h2 id="faq-title">Todo lo que necesitas saber <em>antes de empezar.</em></h2>
+          <p>¿Todavía tienes alguna pregunta? La respuesta más importante es esta: la ChronBible en línea es gratis.</p>
+          <a class="text-link" href="#signup">Obtén la ChronBible gratis <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>¿La ChronBible es realmente gratis?<span class="faq-plus" aria-hidden="true"></span></summary>
+            <p>¡Sí! El acceso a toda la ChronBible en línea es gratis. No necesitas comprar nada.</p>
+          </details>
+          <details>
+            <summary>¿Necesito saber mucho de la Biblia?<span class="faq-plus" aria-hidden="true"></span></summary>
+            <p>Para nada. La ChronBible está diseñada tanto para principiantes como para lectores con experiencia.</p>
+          </details>
+          <details>
+            <summary>¿Tengo que leer todos los días?<span class="faq-plus" aria-hidden="true"></span></summary>
+            <p>No. Puedes leer a tu ritmo y volver cuando quieras.</p>
+          </details>
+          <details>
+            <summary>¿La ChronBible cambia la Biblia?<span class="faq-plus" aria-hidden="true"></span></summary>
+            <p>No. La ChronBible presenta las Escrituras en una secuencia de lectura histórica. El texto bíblico no cambia. Algunas fechas históricas y el orden de ciertos acontecimientos son inciertos.</p>
+          </details>
+          <details>
+            <summary>¿Qué traducción de la Biblia debo usar?<span class="faq-plus" aria-hidden="true"></span></summary>
+            <p>Puedes acompañar las lecturas de la ChronBible con tu traducción preferida de la Biblia.</p>
+          </details>
+          <details>
+            <summary>¿Puedo usarla en mi teléfono o computadora?<span class="faq-plus" aria-hidden="true"></span></summary>
+            <p>¡Sí! La ChronBible en línea funciona en teléfonos, tabletas y computadoras compatibles.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-section" aria-labelledby="closing-title">
+      <div class="container closing-inner">
+        <p class="section-label">TU PRÓXIMO CAPÍTULO EMPIEZA AQUÍ</p>
+        <h2 id="closing-title">Has querido comprender la Biblia.<br><em>Ahora tienes una forma más sencilla de leerla.</em></h2>
+        <p>No tienes que seguir saltando entre cronologías confusas. No tienes que averiguar por tu cuenta el orden de los acontecimientos bíblicos. Y no tienes que esperar a saber más de la Biblia para empezar.</p>
+        <a class="button button-large" href="#signup">¡Sí! Quiero acceso gratis al instante <span aria-hidden="true">↗</span></a>
+        <span class="closing-fineprint">Acceso gratis en línea • Lee a tu ritmo • Sin compras obligatorias</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="#top">
+          <svg class="brand-mark" aria-hidden="true"><use href="#chronbible-mark"></use></svg>
+          <span class="brand-name">Chron<span>Bible</span></span>
+        </a>
+        <p>La Biblia. Una sola historia. En orden.</p>
+        <p class="footer-muted">Respuestas bíblicas claras y una comunidad acogedora.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#included">La ChronBible</a>
+        <a href="#how">Cómo funciona</a>
+        <a href="#faq">Preguntas frecuentes</a>
+        <a href="https://tryjesusmedia.com/es/" target="_blank" rel="noopener noreferrer">Try Jesus Media</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> ChronBible. Un recurso de Try Jesus Media.</p>
+      <div>
+        <a href="https://tryjesusmedia.com/privacy" target="_blank" rel="noopener noreferrer">Privacidad</a>
+        <a href="mailto:info@tryjesusmedia.com">Contacto</a>
+      </div>
+    </div>
+  </footer>
+  <script
+    data-omnisend-loader="true"
+    type="text/javascript"
+  >
+
+    window.omnisend = window.omnisend || [];
+
+    omnisend.push([
+      "brandID",
+      "6995f37d2de8216a26d88410"
+    ]);
+
+    omnisend.push([
+      "track",
+      "$pageViewed"
+    ]);
+
+    !function () {
+
+      var e = document.createElement("script");
+
+      e.type = "text/javascript";
+      e.async = true;
+      e.src = "https://omnisnippet1.com/inshop/launcher-v2.js";
+
+      var t = document.getElementsByTagName("script")[0];
+
+      t.parentNode.insertBefore(e, t);
+
+    }();
+
+  </script>
+</body>
+</html>

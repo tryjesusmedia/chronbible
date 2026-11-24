@@ -4,10 +4,14 @@
   const toggle = document.querySelector('.menu-toggle');
   const menu = document.querySelector('#mobile-nav');
 
+  const isSpanish = document.documentElement.lang === 'es';
+  const openLabel = isSpanish ? 'Abrir menú' : 'Open navigation';
+  const closeLabel = isSpanish ? 'Cerrar menú' : 'Close navigation';
+
   function closeMenu() {
     if (!toggle || !menu) return;
     toggle.setAttribute('aria-expanded', 'false');
-    toggle.setAttribute('aria-label', 'Open navigation');
+    toggle.setAttribute('aria-label', openLabel);
     menu.hidden = true;
   }
 
@@ -15,7 +19,7 @@
     toggle.addEventListener('click', () => {
       const opening = toggle.getAttribute('aria-expanded') !== 'true';
       toggle.setAttribute('aria-expanded', String(opening));
-      toggle.setAttribute('aria-label', opening ? 'Close navigation' : 'Open navigation');
+      toggle.setAttribute('aria-label', opening ? closeLabel : openLabel);
       menu.hidden = !opening;
     });
 
@@ -24,7 +28,10 @@
     });
 
     document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape') closeMenu();
+      if (event.key === 'Escape' && !menu.hidden) {
+        closeMenu();
+        toggle.focus();
+      }
     });
 
     document.addEventListener('click', (event) => {
@@ -33,16 +40,10 @@
       }
     });
 
-    const desktop = window.matchMedia('(min-width: 861px)');
-    desktop.addEventListener?.('change', (event) => {
-      if (event.matches) closeMenu();
-    });
   }
 
   const year = document.getElementById('year');
   if (year) year.textContent = String(new Date().getFullYear());
 
-  // Omnisend is deliberately not emulated here. Once you insert the actual
-  // Omnisend embed into #omnisend-form-slot, the provider owns collection,
-  // validation, submission, consent and styling.
+  // Omnisend owns the bilingual form's fields, consent, submission, and styling.
 })();

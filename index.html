@@ -10,12 +10,14 @@
   <meta property="og:title" content="The ChronBible | The Bible. One Story. In Order.">
   <meta property="og:description" content="Finally, read and understand the entire Bible in the order events happened—without confusing timelines or getting lost in the story.">
   <title>The ChronBible | Read the Bible in the Order It Happened</title>
+  <link rel="alternate" hreflang="en" href="/">
+  <link rel="alternate" hreflang="es" href="/es/">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=1">
-  <script defer src="/script.js?v=1"></script>
+  <link rel="stylesheet" href="/styles.css?v=20261124-language-menu">
+  <script defer src="/script.js?v=20261124-language-menu"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -46,18 +48,18 @@
         <svg class="brand-mark" aria-hidden="true"><use href="#chronbible-mark"></use></svg>
         <span class="brand-name">Chron<span>Bible</span></span>
       </a>
-      <nav class="desktop-nav" aria-label="Main navigation">
-        <a href="#why">The difference</a>
-        <a href="#included">What's included</a>
-        <a href="#how">How it works</a>
-        <a href="#faq">FAQ</a>
-      </nav>
-      <a class="button button-small header-cta" href="#signup">Get free access <span aria-hidden="true">↗</span></a>
+      <div class="header-controls">
+        <nav class="language-switch" aria-label="Language">
+          <a href="/" lang="en" hreflang="en" aria-label="English" aria-current="page">EN</a>
+          <span class="language-divider" aria-hidden="true">/</span>
+          <a href="/es/" lang="es" hreflang="es" aria-label="Español">ES</a>
+        </nav>
       <button class="menu-toggle" type="button" aria-controls="mobile-nav" aria-expanded="false" aria-label="Open navigation">
         <span></span><span></span><span></span>
       </button>
+      </div>
     </div>
-    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Main navigation" hidden>
       <a href="#why">The difference</a>
       <a href="#included">What's included</a>
       <a href="#how">How it works</a>
