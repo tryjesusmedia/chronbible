@@ -212,7 +212,11 @@ details[open] .faq-plus::after{transform:rotate(0)}
 .footer-links a:hover,.footer-bottom a:hover{color:var(--gold)}
 .footer-bottom{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 0;border-top:1px solid rgba(238,189,74,.16)}
 .footer-bottom p{font-size:11px;color:#BDAFBC;margin:0}
-.footer-bottom div{display:flex;gap:22px}
+.footer-bottom div{display:flex;flex-wrap:wrap;gap:10px 22px;min-width:0}
+.footer-bottom a{overflow-wrap:anywhere}
+.site-credit{background:#171018;color:var(--ivory);border-top:1px solid rgba(238,189,74,.16);padding:13px 17px;text-align:center}
+.site-credit a{color:#E1D4DC;font-size:12px;font-weight:600;text-decoration:underline;text-underline-offset:.2em}
+.site-credit a:hover,.site-credit a:focus-visible,.site-footer a:focus-visible{color:var(--gold)}
 
 @media (max-width:1100px){
   .header-inner{gap:15px}
