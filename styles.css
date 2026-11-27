@@ -59,6 +59,9 @@ h2 em,h3 em{color:var(--gold-dark);font-weight:600;font-style:normal}
 .eyebrow-rule{display:inline-block;width:31px;height:1px;background:var(--gold)}
 .hero h1{font-size:clamp(66px,7.6vw,112px);line-height:.85;letter-spacing:-.048em;font-weight:600;margin:0 0 35px}
 .hero h1 span{display:block;color:var(--gold)}
+/* Display the supplied wordmark without its extra transparent vertical padding. */
+.hero h1.hero-wordmark{position:relative;width:100%;max-width:672px;aspect-ratio:2048 / 420;overflow:hidden;line-height:1}
+.hero-wordmark img{position:absolute;top:50%;left:0;display:block;width:100%;height:auto;transform:translateY(-50%)}
 .hero-description{max-width:660px;font-size:clamp(18px,1.7vw,22px);font-weight:500;line-height:1.75;color:#F3E9EF;margin-bottom:30px}
 .hero-points{display:flex;align-items:flex-start;flex-wrap:wrap;column-gap:24px;row-gap:10px;padding:23px 0;border-top:1px solid rgba(238,189,74,.22);border-bottom:1px solid rgba(238,189,74,.22)}
 .hero-points span{display:inline-flex;align-items:center;gap:9px;color:#F5EAF0;font-size:12px;font-weight:600}
