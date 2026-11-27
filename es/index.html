@@ -12,41 +12,21 @@
   <title>La ChronBible | Lee la Biblia en el orden en que sucedió</title>
   <link rel="alternate" hreflang="en" href="/">
   <link rel="alternate" hreflang="es" href="/es/">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/chronbible-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=20261125-footer">
+  <link rel="stylesheet" href="/styles.css?v=20261127-logo">
   <script defer src="/script.js?v=20261124-language-menu"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Ir al contenido</a>
 
-  <!-- Shared emblem. The gold Bible contains an hourglass in plum negative space. -->
-  <svg class="svg-sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <linearGradient id="cb-gold" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="#fff0ae"/>
-        <stop offset=".42" stop-color="#EEBD4A"/>
-        <stop offset="1" stop-color="#bd8328"/>
-      </linearGradient>
-      <symbol id="chronbible-mark" viewBox="0 0 208 174">
-        <path d="M104 57C78 39 40 34 9 51v87c38-13 68-6 95 18 27-24 57-31 95-18V51c-31-17-69-12-95 6Z" fill="url(#cb-gold)"/>
-        <path d="M104 68C80 51 45 47 20 60v63c34-9 63-1 84 18 21-19 50-27 84-18V60c-25-13-60-9-84 8Z" fill="#F3E8D0"/>
-        <path d="M27 72c24-8 49-1 65 10M27 88c23-6 43-1 57 8M27 105c23-3 42 3 55 11M181 72c-24-8-49-1-65 10M181 88c-23-6-43-1-57 8M181 105c-23-3-42 3-55 11" fill="none" stroke="#bd8328" stroke-width="2" stroke-linecap="round" opacity=".52"/>
-        <!-- The hourglass is intentionally cut out of the pages, not drawn as a second object. -->
-        <path d="M83 59Q104 71 125 59C122 79 114 89 109 98c5 9 13 19 16 39q-21-13-42 0c3-20 11-30 16-39-5-9-13-19-16-39Z" fill="#1C111D"/>
-        <path d="M98 100h12M103 103v13" stroke="#EEBD4A" stroke-linecap="round" stroke-width="2" opacity=".9"/>
-        <path d="M9 143c37-12 68-6 95 17 27-23 58-29 95-17" fill="none" stroke="#EEBD4A" stroke-width="5" stroke-linecap="round"/>
-      </symbol>
-    </defs>
-  </svg>
-
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="ChronBible, volver al inicio">
-        <svg class="brand-mark" aria-hidden="true"><use href="#chronbible-mark"></use></svg>
-        <span class="brand-name">Chron<span>Bible</span></span>
+        <img class="brand-mark" src="/assets/chronbible-emblem.webp" width="320" height="320" alt="">
+        <img class="brand-wordmark" src="/assets/chronbible-wordmark.webp" width="480" height="87" alt="ChronBible">
       </a>
       <div class="header-controls">
         <nav class="language-switch" aria-label="Idioma">
@@ -213,7 +193,7 @@
     <section class="section fresh-start-section" aria-labelledby="fresh-start-title">
       <div class="container fresh-start-grid">
         <div class="fresh-start-quote" aria-hidden="true">
-          <svg class="large-mark"><use href="#chronbible-mark"></use></svg>
+          <img class="large-mark" src="/assets/chronbible-emblem.webp" width="320" height="320" alt="" loading="lazy">
           <div class="book-quote">
             <span>“</span>
             <p>Una lectura<br>a la vez.<br><em>Una historia conectada.</em></p>
@@ -330,8 +310,8 @@
     <div class="container footer-top">
       <div class="footer-brand">
         <a class="brand" href="#top">
-          <svg class="brand-mark" aria-hidden="true"><use href="#chronbible-mark"></use></svg>
-          <span class="brand-name">Chron<span>Bible</span></span>
+          <img class="brand-mark" src="/assets/chronbible-emblem.webp" width="320" height="320" alt="">
+          <img class="brand-wordmark" src="/assets/chronbible-wordmark.webp" width="480" height="87" alt="ChronBible">
         </a>
         <p>La Biblia. Una sola historia. En orden.</p>
         <p class="footer-muted">Respuestas bíblicas claras y una comunidad acogedora.</p>

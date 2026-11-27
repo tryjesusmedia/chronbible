@@ -16,7 +16,6 @@ img,svg{max-width:100%}
 :focus-visible{outline:3px solid var(--gold);outline-offset:4px}
 ::selection{background:var(--gold);color:var(--midnight)}
 .container{width:min(1168px,calc(100% - 48px));margin-inline:auto}
-.svg-sprite{position:absolute;top:0;left:0;width:0;height:0;overflow:hidden}
 .skip-link{position:fixed;z-index:1000;top:-80px;left:16px;background:#fff;color:var(--plum);padding:10px 16px;border-radius:8px}
 .skip-link:focus{top:16px}
 h1,h2,h3,p{margin-top:0}
@@ -45,9 +44,8 @@ h2 em,h3 em{color:var(--gold-dark);font-weight:600;font-style:normal}
 .site-header{position:relative;z-index:30;background:var(--midnight);border-bottom:1px solid rgba(238,189,74,.14)}
 .header-inner{display:flex;align-items:center;gap:30px;min-height:92px}
 .brand{display:inline-flex;align-items:center;gap:10px;white-space:nowrap;flex-shrink:0}
-.brand-mark{width:49px;height:46px;overflow:visible;flex-shrink:0}
-.brand-name{font:600 32px/1 var(--heading);letter-spacing:-.034em;color:var(--ivory)}
-.brand-name span{color:var(--gold)}
+.brand-mark{width:49px;height:49px;object-fit:contain;flex-shrink:0}
+.brand-wordmark{display:block;width:162px;height:auto;flex-shrink:0}
 
 /* Hero */
 .hero{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse 65% 80% at 13% 40%,#3d2841 0%,transparent 76%),linear-gradient(135deg,#28172a 0%,#1C111D 73%);color:var(--ivory);padding:clamp(64px,7.5vw,112px) 0 clamp(75px,8vw,114px)}
@@ -145,7 +143,7 @@ h2 em,h3 em{color:var(--gold-dark);font-weight:600;font-style:normal}
 .fresh-start-quote::before,.fresh-start-quote::after{content:"";position:absolute;width:190px;height:190px;border:1px solid rgba(238,189,74,.16);border-radius:50%}
 .fresh-start-quote::before{top:-115px;left:-95px}
 .fresh-start-quote::after{bottom:-115px;right:-95px}
-.large-mark{height:150px;width:190px;margin-bottom:6px;filter:drop-shadow(0 9px 19px rgba(0,0,0,.14))}
+.large-mark{height:150px;width:190px;object-fit:contain;margin-bottom:6px;filter:drop-shadow(0 9px 19px rgba(0,0,0,.14))}
 .book-quote>span{display:block;font:600 88px/.5 var(--heading);color:var(--gold);margin-top:28px}
 .book-quote p{font:600 clamp(32px,3vw,45px)/1.15 var(--heading);margin:0}
 .book-quote em{font-style:normal;color:var(--gold)}
@@ -239,8 +237,8 @@ details[open] .faq-plus::after{transform:rotate(0)}
 @media (max-width:600px){
   .container{width:min(100% - 34px,1168px)}
   .section{padding:75px 0}
-  .brand-mark{width:41px;height:38px}
-  .brand-name{font-size:29px}
+  .brand-mark{width:41px;height:41px}
+  .brand-wordmark{width:148px}
   h2{font-size:clamp(38px,10vw,51px)}
   .section-centered>p:not(.section-label){font-size:16px}
   .section-label,.eyebrow,.signup-kicker{font-size:10px;letter-spacing:.16em}
@@ -313,6 +311,6 @@ details[open] .faq-plus::after{transform:rotate(0)}
 @media(max-width:400px){
   .header-inner{gap:8px}
   .site-header .brand{gap:6px}
-  .site-header .brand-mark{width:30px;height:32px}
-  .site-header .brand-name{font-size:25px}
+  .site-header .brand-mark{width:32px;height:32px}
+  .site-header .brand-wordmark{width:126px}
 }
